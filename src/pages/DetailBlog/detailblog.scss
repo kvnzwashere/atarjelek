@@ -1,0 +1,48 @@
+$primary: #3498db;
+$font-family: 'Arial', sans-serif;
+
+.detail-blog-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+
+  .img-cover {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .blog-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: $primary;
+  }
+
+  .blog-author {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 5px 0;
+  }
+
+  .blog-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $primary;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+}

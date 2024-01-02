@@ -1,0 +1,51 @@
+$primary: #3498db;
+$font-family: 'Arial', sans-serif;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba($primary, 0.9); // Menambahkan transparansi
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease; // Animasi perubahan warna latar belakang
+
+  &:hover {
+    background-color: $primary; // Warna penuh saat dihover
+  }
+
+  .logo-app {
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease; // Animasi perubahan warna teks saat dihover
+
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+
+  .nav-container {
+    display: flex;
+    gap: 1rem;
+
+    .nav-link {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; // Animasi efek saat dihover
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: darken($primary, 20%);
+        transform: scale(1.05); // Efek membesar saat dihover
+      }
+    }
+  }
+}
